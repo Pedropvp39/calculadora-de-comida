@@ -1,0 +1,232 @@
+/* Importação de uma fonte para deixar mais agradável */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ---  Reset e Estilos Gerais (Padronização) --- */
+* {
+    /* Remove margens e preenchimentos padrão e garante que padding/border não aumentem o tamanho total do elemento */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* Define a fonte principal para todos os elementos */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7; /* Fundo claro e suave */
+    color: #333; /* Cor de texto principal */
+    line-height: 1.6; /* Espaçamento de linha para melhor leitura */
+}
+
+/* --- Estilos da Estrutura Principal --- */
+
+header {
+    background-color: #4CAF50; /* Verde principal */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o cabeçalho */
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto; /* Centralização principal com margem superior/inferior */
+    padding: 0 20px;
+}
+
+h2 {
+    color: #388E3C; /* Tom de verde mais escuro */
+    border-bottom: 2px solid #E0E0E0;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 40px 0; /* Separador horizontal estilizado */
+}
+
+/* --- Estilos de Formulário Inputs e Botões --- */
+
+/* Estilo base para elementos de interação */
+select, input[type="number"], button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    flex-grow: 1; /* Permite que o select ocupe mais espaço em layouts flex */
+    min-width: 200px;
+}
+
+input[type="number"] {
+    width: 80px;
+    text-align: center;
+}
+
+button {
+    background-color: #FF9800; /* Laranja padrão para o botão "Adicionar" */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição para efeitos de hover */
+    flex-grow: 1;
+    min-width: 150px;
+}
+
+button:hover {
+    background-color: #e68900; /* Laranja mais escuro no hover */
+    transform: translateY(-2px); /* Efeito de elevação sutil no hover */
+}
+
+/* Estilo específico para o botão de Calcular Total  */
+.calculo-btn {
+    width: 100%; /* Ocupa toda a largura no container */
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #149926; /* Verde forte */
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.calculo-btn:hover {
+    background-color: #14db1e; /* Verde mais claro no hover */
+    transform: translateY(-2px);
+}
+
+/* --- Estilos da Lista de Pedidos --- */
+
+#lista-pedido {
+    list-style: none; /* Remove marcadores de lista */
+    padding: 0;
+}
+
+#lista-pedido li {
+    display: flex; /* Layout flexível para alinhar informações e botão de remoção */
+    justify-content: space-between; /* Espaço entre as informações e o botão */
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
+    
+    /* Animação de entrada : Inicia invisível para aplicar o efeito */
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Definição da animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Começa um pouco abaixo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.item-info {
+    flex-grow: 1; /* Ocupa o máximo de espaço possível */
+    display: flex;
+    justify-content: space-between; /* Alinha o nome do item à esquerda e o preço total à direita */
+    align-items: center;
+}
+
+.remover-btn {
+    margin-left: 20px;
+    background-color: #F44336; /* Vermelho para indicar remoção/perigo */
+    padding: 5px 10px;
+    font-size: 14px;
+    flex-grow: 0; /* Impede que o botão de remover cresça muito */
+}
+
+.remover-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* --- Destaque Específico Requisito --- */
+
+/* Classe aplicada via JavaScript para destacar o item mais caro */
+.destaque-caro {
+    border-left: 5px solid #E91E63 !important; /* Borda lateral de cor vibrante Rosa */
+    background-color: #FFF3F7 !important; /* Fundo mais claro para contraste */
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(233, 30, 99, 0.2); /* Sombra que destaca o item */
+}
+
+/* --- Estilos do Total Geral --- */
+
+#total-geral {
+    text-align: right;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #E8F5E9; /* Fundo suavemente verde */
+    border: 2px solid #81C784; /* Borda de destaque */
+    border-radius: 6px;
+    font-size: 1.5em; /* Fonte maior para o destaque do valor */
+}
+
+#total-geral strong {
+    margin-right: 10px;
+    color: #388E3C; /* Cor de destaque para o valor numérico */
+}
+
+/* --- Estilos da Div de Erro --- */
+.erro {
+    color: #D32F2F; /* Cor do texto de erro Vermelho escuro */
+    background-color: #FFEBEE; /* Fundo claro avermelhado */
+    border: 1px solid #D32F2F;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    display: none; /* Inicia oculto, será exibido pelo JS */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* --- 9. Responsividade Media Query --- */
+@media (max-width: 600px) {
+    /* Altera o layout de controle para empilhar itens verticalmente em telas menores */
+    .controles {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* Campos de formulário e botões ocupam a largura total */
+    select, input[type="number"], button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Altera o layout de cada item da lista para empilhar verticalmente */
+    #lista-pedido li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* As informações do item ocupam a largura total */
+    .item-info {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* O botão de remover ocupa a largura total do item */
+    .remover-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+}

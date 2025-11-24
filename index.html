@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Refeições</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora de Refeições</h1>
+    </header>
+
+    <main>
+        <section class="adicionar-item">
+            <p class="explicacao">Selecione um item do cardápio e a quantidade para montar seu pedido.</p>
+
+            <div class="controles">
+                <select id="alimento-select">
+                    <option value="" disabled selected>-- Selecione um Alimento --</option>
+                    <option value="lasanha" data-preco="28.50">Lasanha Bolonhesa (R$ 28,00)</option>
+                    <option value="feijoada" data-preco="35.00">Feijoada Completa (R$ 35,00)</option>
+                    <option value="salada" data-preco="19.90">Salada Caesar (R$ 19,00)</option>
+                    <option value="suco" data-preco="7.50">Suco Natural (R$ 7,50)</option>
+                    <option value="pudim" data-preco="10.00">Pudim de Leite (R$ 10,00)</option>
+                    <option value="xratao" data-preco="28.00">Xratão(R$ 28,00)</option>
+                    <option value="xpodrao" data-preco="35.00">Xpodrão(R$ 35,00)</option>
+                    <option value="mainha" data-preco="45.00">Comida de mainha(R$ 45,00)</option>
+                </select>
+
+                <input type="number" id="quantidade-input" min="1" max="9" value="1" placeholder="Quantidade">
+
+                <button id="adicionar-btn">Adicionar ao pedido</button>
+            </div>
+
+            <div id="erro-div" class="erro"></div>
+        </section>
+
+        <hr>
+
+        <section id="pedido">
+            <h2>📝Seu Pedido</h2>
+            <ul id="lista-pedido">
+            </ul>
+              <button id="calcular-total-btn" class="calculo-btn">Calcular Total do Pedido</button>
+
+            <div id="total-geral">
+                <strong>Total Geral:</strong> <span id="valor-total">R$ 0,00</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Projeto Desenvolvido por Pedro Henrique Lopes Cavalcanti- Data: 2025</p>
+    </footer>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
