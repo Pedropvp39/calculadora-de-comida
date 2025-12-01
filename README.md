@@ -11,7 +11,12 @@ Projeto criado com o intuito de fazer calculos pré-definidos.Permite registrar 
 * Após isso extraia a pasta onde desejar *
 * Procure na pasta "index.html" e então click nele duas vezes e ele abrirá em seu navegador *
 # Lista de Funcionalidades
-
+## 2. Lista de Funcionalidades
+* 🛒 **Seleção de Alimentos:** Permite ao usuário escolher itens de um **cardápio pré-definido** (Lasanha, Feijoada, Suco, etc.).
+* 🔢 **Definição de Quantidade:** Possibilidade de especificar a **quantidade** de cada item desejado.
+* ➕ **Adição ao Pedido:** Botão dedicado para **adicionar itens** e suas quantidades à lista de pedidos.
+* 📝 **Visualização do Pedido:** Exibição clara e dinâmica de **todos os itens** e subtotais no pedido atual.
+* 💰 **Cálculo de Total:** Funcionalidade central que calcula e exibe o **Total Geral** do pedido em tempo real.
 # Melhorias Futuras 
 * Modo Escuro
 * Monitoramento
