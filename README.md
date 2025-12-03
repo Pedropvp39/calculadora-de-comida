@@ -29,7 +29,7 @@ Na criação desta pagina foi possivel aprender a manipular mais o JavaScript,CS
 ## 🧑‍💻 Passo a Passo
 Para obter uma cópia completa do código e do histórico da pagina, use o seguinte comando no seu Terminal:
 * Copie a URL HTTPS do repositório
-* "[git clone https://github.com/SeuUsuario/nome-do-site.git](https://github.com/Pedropvp39/calculadora-de-comida.git)"
+* "[[git clone https://github.com/SeuUsuario/nome-do-site.git](https://github.com/Pedropvp39/calculadora-de-comida.git)](https://github.com/Pedropvp39/calculadora-de-comida.git)"
 # Autor
 | Campo | Informação |
 | :--- | :--- |
