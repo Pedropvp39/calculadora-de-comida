@@ -5,7 +5,7 @@ Projeto criado com o intuito de fazer calculos pré-definidos.Permite registrar 
 * **CSS**
 * **JavaScript**
 * **Git e GitHub**
-* ** VS Code **
+* **VS Code**
 # como Instalar
 ## ⚙️ Pré-requisitos
 * Click em "Code" e então em Download.Zip *
