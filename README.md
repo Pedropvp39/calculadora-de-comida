@@ -5,6 +5,7 @@ Projeto criado com o intuito de fazer calculos pré-definidos.Permite registrar 
 * **CSS**
 * **JavaScript**
 * **Git e GitHub**
+* ** VS Code **
 # como Instalar
 ## ⚙️ Pré-requisitos
 * Click em "Code" e então em Download.Zip *
@@ -35,6 +36,8 @@ Para obter uma cópia completa do código e do histórico da pagina, use o segui
 | Campo | Informação |
 | :--- | :--- |
 | **Autor** | Pedro Henrique.L.Cavalvanti |
+| **Turno** | Matutino |
+|| Turma de Tecnologia Em Informatica Para Internet|
 | **GitHub** | [@Pedropvp39](https://github.com/Pedropvp39) |
 ## Link caso ele ainda esteja hospedado "temporariamente".
 https://pedropvp39.github.io/calculadora-de-comida/
