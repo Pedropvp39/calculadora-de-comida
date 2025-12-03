@@ -37,7 +37,7 @@ Para obter uma cópia completa do código e do histórico da pagina, use o segui
 | :--- | :--- |
 | **Autor** | Pedro Henrique.L.Cavalvanti |
 | **Turno** | Matutino |
-|| Turma de Tecnologia Em Informatica Para Internet|
+|| Turma de Tecnologia Em Informatica Para Internet - SENAC-DF|
 | **GitHub** | [@Pedropvp39](https://github.com/Pedropvp39) |
 ## Link caso ele ainda esteja hospedado "temporariamente".
 https://pedropvp39.github.io/calculadora-de-comida/
